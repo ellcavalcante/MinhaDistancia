@@ -12,7 +12,8 @@ import CoreLocation
 class StartedViewController: UIViewController {
     
     var screen: StartedScreen?
-
+    var homeVC: HomeViewController = HomeViewController()
+    
     private let manager = CLLocationManager()
     
     override func loadView() {
@@ -46,7 +47,6 @@ extension StartedViewController: StartedScreenProtocol {
 }
 
 extension StartedViewController: CLLocationManagerDelegate {
-    
     func locationManagerDidChangeAuthorization(_ manager: CLLocationManager) {
         let status = manager.authorizationStatus
         switch status {
@@ -61,15 +61,17 @@ extension StartedViewController: CLLocationManagerDelegate {
             print("authorizedAlways")
         case .authorizedWhenInUse:
             print("authorizedWhenInUse")
+            self.navigationController?.pushViewController(homeVC, animated: true)
         @unknown default:
             print("nothing")
         }
     }
     
-    func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
-        let location = locations.last
-        print("New location: \(location?.coordinate.latitude ?? 0), \(location?.coordinate.longitude ?? 0)")
-    }
+//    func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
+//        let location = locations.last
+//        print("New location: \(location?.coordinate.latitude ?? 0), \(location?.coordinate.longitude ?? 0)")
+//        self.navigationController?.pushViewController(HomeViewController(lat: location?.coordinate.latitude ?? 0, long: location?.coordinate.longitude ?? 0), animated: true)
+//    }
 }
 
 
