@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0B18DDD62B57626000517D52 /* LocationInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B18DDD52B57626000517D52 /* LocationInfoView.swift */; };
 		0B5A72642B4C946A004F2DA6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0B5A72632B4C946A004F2DA6 /* LaunchScreen.storyboard */; };
 		0B5A72662B4C94AA004F2DA6 /* HomeScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B5A72652B4C94AA004F2DA6 /* HomeScreen.swift */; };
 		0B5A72692B4CF0DB004F2DA6 /* StartedScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B5A72682B4CF0DB004F2DA6 /* StartedScreen.swift */; };
@@ -21,6 +22,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0B18DDD52B57626000517D52 /* LocationInfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationInfoView.swift; sourceTree = "<group>"; };
 		0B5A72632B4C946A004F2DA6 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0B5A72652B4C94AA004F2DA6 /* HomeScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScreen.swift; sourceTree = "<group>"; };
 		0B5A72682B4CF0DB004F2DA6 /* StartedScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartedScreen.swift; sourceTree = "<group>"; };
@@ -128,6 +130,7 @@
 			children = (
 				4C3862A72A758819005C9C3B /* HomeViewController.swift */,
 				0B5A72652B4C94AA004F2DA6 /* HomeScreen.swift */,
+				0B18DDD52B57626000517D52 /* LocationInfoView.swift */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -210,6 +213,7 @@
 				4C33FF332A75A3F40002E765 /* DS.swift in Sources */,
 				4C33FF2E2A75A2640002E765 /* UIColor+ext.swift in Sources */,
 				0B5A72692B4CF0DB004F2DA6 /* StartedScreen.swift in Sources */,
+				0B18DDD62B57626000517D52 /* LocationInfoView.swift in Sources */,
 				4C3862A42A758819005C9C3B /* AppDelegate.swift in Sources */,
 				4C3862A62A758819005C9C3B /* SceneDelegate.swift in Sources */,
 			);
